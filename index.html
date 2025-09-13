@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Financial Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #155ab6;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+
+    .alert {
+      background: #ffefef;
+      color: #d93025;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    .goal-progress {
+      background: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      margin: 10px 0;
+    }
+
+    .goal-progress div {
+      height: 100%;
+      background: #1a73e8;
+      width: 60%; /* dynamic based on progress */
+    }
+
+    .chart-placeholder {
+      background: linear-gradient(135deg, #dbeafe, #93c5fd);
+      border-radius: 10px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #155ab6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI Financial Dashboard</h1>
+    <p>Smart insights for your spending & savings</p>
+  </header>
+
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Expenses</a>
+    <a href="#">Goals</a>
+    <a href="#">Settings</a>
+  </nav>
+
+  <div class="container">
+    <!-- Left Panel -->
+    <div>
+      <div class="card">
+        <h2>Budget Alerts</h2>
+        <div class="alert">⚠️ You are close to exceeding your Food budget!</div>
+        <div class="alert">⚠️ Entertainment spending is 20% above average.</div>
+      </div>
+
+      <div class="card">
+        <h2>Goals</h2>
+        <p>Vacation Savings</p>
+        <div class="goal-progress"><div></div></div>
+        <p>Emergency Fund</p>
+        <div class="goal-progress"><div style="width: 30%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div>
+      <div class="card">
+        <h2>Predictive Spending Analysis</h2>
+        <div class="chart-placeholder">[Predictive Spending Chart Here]</div>
+      </div>
+
+      <div class="card">
+        <h2>Expense Categorization</h2>
+        <ul>
+          <li>🍔 Food & Dining - $350</li>
+          <li>🏠 Housing - $1200</li>
+          <li>🚗 Transportation - $220</li>
+          <li>🎉 Entertainment - $180</li>
+          <li>🛒 Shopping - $400</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
